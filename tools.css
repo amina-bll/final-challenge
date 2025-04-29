@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #241B1B;
+background: radial-gradient(circle, rgba(36, 27, 27, 1) 80%, rgba(127, 98, 148, 1) 100%);
+  font-family: 'Inter', sans-serif;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Filter buttons */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #888;
+  background: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: #6246ea;
+  border-color: #6246ea;
+  color: #fff;
+}
+
+/* Tools Section */
+.tools-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+/* Grid & Cards */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.tool-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(246, 243, 243, 0.1);
+}
+.tool-logo {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 1rem;
+}
+.tool-name {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.tool-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.tool-rating {
+  font-size: 0.9rem;
+  color: #f5a623;
+}
+.tool-rating span {
+  color: #333;
+}
+.hidden {
+  display: none !important;
+}
+
+
+

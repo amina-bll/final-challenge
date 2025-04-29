@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Dispersion Hub</title>
+    <link rel="stylesheet" href="nn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-switch" aria-label="Toggle dark mode">
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+        </button>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>Anti-Dispersion Hub</h1>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#tools" class="active"><span class="icon">📂</span> Tool Organizer</a></li>
+                <li><a href="#focus"><span class="icon">🎯</span> Focus Zone</a></li>
+                <li><a href="#ideas"><span class="icon">🧠</span> Idea Garden</a></li>
+                <li><a href="#vision"><span class="icon">🗺️</span> Vision Board</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Stay focused, creative, and free from tool-overload</p>
+        </div>
+    </aside>
+
+    <main class="content">
+        <header class="mobile-header">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+            <h1>Anti-Dispersion Hub</h1>
+        </header>
+
+        <section id="tools" class="section">
+            <div class="section-header">
+                <h2>📂 Tool Organizer</h2>
+                <button class="add-button" id="add-tool-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                    Add Tool
+                </button>
+            </div>
+            <div class="cards-container" id="tools-container">
+                <div class="card tool-card">
+                    <div class="card-header">
+                        <h3>ChatGPT</h3>
+                        <div class="card-actions">
+                            <button class="icon-button edit-btn" aria-label="Edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                            </button>
+                            <button class="icon-button delete-btn" aria-label="Delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p>General-purpose AI assistant for writing, brainstorming, and problem-solving.</p>
+                    <a href="https://chat.openai.com" target="_blank" class="card-link">Open Tool</a>
+                </div>
+                <div class="card tool-card">
+                    <div class="card-header">
+                        <h3>Midjourney</h3>
+                        <div class="card-actions">
+                            <button class="icon-button edit-btn" aria-label="Edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                            </button>
+                            <button class="icon-button delete-btn" aria-label="Delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p>AI image generation tool for creating stunning visuals from text descriptions.</p>
+                    <a href="https://www.midjourney.com" target="_blank" class="card-link">Open Tool</a>
+                </div>
+                <div class="card tool-card">
+                    <div class="card-header">
+                        <h3>Notion AI</h3>
+                        <div class="card-actions">
+                            <button class="icon-button edit-btn" aria-label="Edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                            </button>
+                            <button class="icon-button delete-btn" aria-label="Delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p>AI-powered writing assistant integrated with Notion for notes and documents.</p>
+                    <a href="https://www.notion.so" target="_blank" class="card-link">Open Tool</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="focus" class="section">
+            <div class="section-header">
+                <h2>🎯 Focus Zone</h2>
+                <button class="add-button" id="add-task-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                    Add Task
+                </button>
+            </div>
+            <div class="focus-container">
+                <div class="main-goal">
+                    <h3>Main Goal</h3>
+                    <div class="goal-content" id="main-goal-content">
+                        <p>Complete the first draft of my research paper on AI ethics</p>
+                        <button class="edit-goal-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="timer-container">
+                    <div class="timer" id="focus-timer">
+                        <span id="timer-display">25:00</span>
+                        <div class="timer-controls">
+                            <button id="start-timer">Start</button>
+                            <button id="reset-timer">Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tasks-container">
+                    <h3>Micro-Tasks</h3>
+                    <ul class="tasks-list" id="tasks-list">
+                        <li class="task-item">
+                            <input type="checkbox" id="task1" class="task-checkbox">
+                            <label for="task1">Review literature on AI bias</label>
+                            <div class="task-actions">
+                                <button class="icon-button edit-task-btn" aria-label="Edit task">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                                </button>
+                                <button class="icon-button delete-task-btn" aria-label="Delete task">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="task-item">
+                            <input type="checkbox" id="task2" class="task-checkbox">
+                            <label for="task2">Outline introduction section</label>
+                            <div class="task-actions">
+                                <button class="icon-button edit-task-btn" aria-label="Edit task">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                                </button>
+                                <button class="icon-button delete-task-btn" aria-label="Delete task">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="task-item">
+                            <input type="checkbox" id="task3" class="task-checkbox">
+                            <label for="task3">Draft methodology section</label>
+                            <div class="task-actions">
+                                <button class="icon-button edit-task-btn" aria-label="Edit task">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                                </button>
+                                <button class="icon-button delete-task-btn" aria-label="Delete task">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="ideas" class="section">
+            <div class="section-header">
+                <h2>🧠 Idea Garden</h2>
+                <button class="add-button" id="add-idea-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                    Add Idea
+                </button>
+            </div>
+            <div class="ideas-container" id="ideas-container">
+                <div class="idea-card">
+                    <div class="idea-header">
+                        <h3>AI Ethics Framework</h3>
+                        <div class="idea-actions">
+                            <button class="icon-button edit-idea-btn" aria-label="Edit idea">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                            </button>
+                            <button class="icon-button delete-idea-btn" aria-label="Delete idea">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p>Develop a comprehensive framework for evaluating AI systems based on transparency, fairness, and accountability.</p>
+                    <div class="idea-meta">
+                        <span class="idea-date">April 26, 2023</span>
+                    </div>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-header">
+                        <h3>Personal Knowledge Graph</h3>
+                        <div class="idea-actions">
+                            <button class="icon-button edit-idea-btn" aria-label="Edit idea">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                            </button>
+                            <button class="icon-button delete-idea-btn" aria-label="Delete idea">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p>Create a tool that visualizes connections between my notes, research, and ideas as an interactive knowledge graph.</p>
+                    <div class="idea-meta">
+                        <span class="idea-date">May 3, 2023</span>
+                    </div>
+                </div>
+                <div class="idea-card">
+                    <div class="idea-header">
+                        <h3>AI Writing Assistant</h3>
+                        <div class="idea-actions">
+                            <button class="icon-button edit-idea-btn" aria-label="Edit idea">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                            </button>
+                            <button class="icon-button delete-idea-btn" aria-label="Delete idea">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p>Build a specialized AI writing assistant that helps with academic papers and maintains consistent citation style.</p>
+                    <div class="idea-meta">
+                        <span class="idea-date">May 12, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="section">
+            <div class="section-header">
+                <h2>🗺️ Vision Board</h2>
+                <button class="add-button" id="add-vision-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                    Add Vision
+                </button>
+            </div>
+            <div class="vision-container">
+                <div class="vision-grid">
+                    <div class="vision-card">
+                        <div class="vision-header">
+                            <h3>Mindful Technology Use</h3>
+                            <div class="vision-actions">
+                                <button class="icon-button edit-vision-btn" aria-label="Edit vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                                </button>
+                                <button class="icon-button delete-vision-btn" aria-label="Delete vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="vision-image">
+                            <img src="/placeholder.svg?height=150&width=250" alt="Mindful technology use visualization">
+                        </div>
+                        <p>Use technology intentionally to enhance creativity and focus, not distraction.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-header">
+                            <h3>Deep Work Practice</h3>
+                            <div class="vision-actions">
+                                <button class="icon-button edit-vision-btn" aria-label="Edit vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                                </button>
+                                <button class="icon-button delete-vision-btn" aria-label="Delete vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="vision-image">
+                            <img src="/placeholder.svg?height=150&width=250" alt="Deep work practice visualization">
+                        </div>
+                        <p>Cultivate the ability to focus without distraction on cognitively demanding tasks.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-header">
+                            <h3>Knowledge Synthesis</h3>
+                            <div class="vision-actions">
+                                <button class="icon-button edit-vision-btn" aria-label="Edit vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                                </button>
+                                <button class="icon-button delete-vision-btn" aria-label="Delete vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="vision-image">
+                            <img src="/placeholder.svg?height=150&width=250" alt="Knowledge synthesis visualization">
+                        </div>
+                        <p>Connect ideas across disciplines to create novel insights and solutions.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-header">
+                            <h3>Digital Minimalism</h3>
+                            <div class="vision-actions">
+                                <button class="icon-button edit-vision-btn" aria-label="Edit vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
+                                </button>
+                                <button class="icon-button delete-vision-btn" aria-label="Delete vision">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="vision-image">
+                            <img src="/placeholder.svg?height=150&width=250" alt="Digital minimalism visualization">
+                        </div>
+                        <p>Embrace simplicity in digital tools and workflows to reduce cognitive load.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal" id="tool-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Tool</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="tool-form">
+                <div class="form-group">
+                    <label for="tool-name">Tool Name</label>
+                    <input type="text" id="tool-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="tool-description">Description</label>
+                    <textarea id="tool-description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tool-link">Link</label>
+                    <input type="url" id="tool-link" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="task-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Task</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="task-name">Task</label>
+                    <input type="text" id="task-name" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="idea-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Idea</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="idea-form">
+                <div class="form-group">
+                    <label for="idea-title">Title</label>
+                    <input type="text" id="idea-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="idea-description">Description</label>
+                    <textarea id="idea-description" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="vision-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Vision</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="vision-form">
+                <div class="form-group">
+                    <label for="vision-title">Title</label>
+                    <input type="text" id="vision-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="vision-description">Description</label>
+                    <textarea id="vision-description" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="goal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Main Goal</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="goal-form">
+                <div class="form-group">
+                    <label for="goal-text">Goal</label>
+                    <textarea id="goal-text" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

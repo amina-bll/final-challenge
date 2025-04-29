@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>AI Tools Hub</title>
+  <link rel="stylesheet" href="tools.css">
+</head>
+<body>
+  
+  <!-- Section Filters -->
+  <section class="filter-section">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="productivity">Productivity</button>
+    <button class="filter-btn" data-filter="creativity">Creativity</button>
+    <button class="filter-btn" data-filter="automation">Automation</button>
+  </section>
+
+  <!-- Section Tools -->
+  <section id="tools" class="tools-section">
+    <h2 class="section-title">Explore AI Tools</h2>
+
+    <!-- Productivity -->
+    <div class="tools-grid">
+      <div class="tool-card" data-category="productivity">
+        <img src="./assets/obsedian.png" alt="Notion AI logo" class="tool-logo">
+        <h4 class="tool-name">Notion AI</h4>
+        <p class="tool-desc">Automates note-taking, generates outlines and summaries.</p>
+        <div class="tool-rating">★★★★☆ <span>(4.0)</span></div>
+      </div>
+      <div class="tool-card" data-category="productivity">
+        <img src="./assets/claude.png" alt="ChatGPT logo" class="tool-logo">
+        <h4 class="tool-name">ChatGPT</h4>
+        <p class="tool-desc">Conversational AI for brainstorming, coding help and drafting text.</p>
+        <div class="tool-rating">★★★★★ <span>(5.0)</span></div>
+      </div>
+
+      <!-- Creativity -->
+      <div class="tool-card" data-category="creativity">
+        <img src="./assets/cursor.png" alt="Midjourney logo" class="tool-logo">
+        <h4 class="tool-name">Midjourney</h4>
+        <p class="tool-desc">Generates AI-driven visuals from simple text prompts.</p>
+        <div class="tool-rating">★★★★☆ <span>(4.3)</span></div>
+      </div>
+      <div class="tool-card" data-category="creativity">
+        <img src="./assets/n8n.png" alt="Canva AI logo" class="tool-logo">
+        <h4 class="tool-name">Canva AI</h4>
+        <p class="tool-desc">Designs graphics and presentations with AI suggestions.</p>
+        <div class="tool-rating">★★★☆☆ <span>(3.8)</span></div>
+      </div>
+
+      <!-- Automation -->
+      <div class="tool-card" data-category="automation">
+        <img src="./assets/otter.png" alt="Zapier logo" class="tool-logo">
+        <h4 class="tool-name">Zapier</h4>
+        <p class="tool-desc">Connects your apps and automates repetitive tasks seamlessly.</p>
+        <div class="tool-rating">★★★★☆ <span>(4.2)</span></div>
+      </div>
+      <div class="tool-card" data-category="automation">
+        <img src="./assets/podcast.adobe_.com_HighRes-Screenshot.jpg" alt="Make logo" class="tool-logo">
+        <h4 class="tool-name">Make (Integromat)</h4>
+        <p class="tool-desc">Visual workflow builder for multi-step automations.</p>
+        <div class="tool-rating">★★★☆☆ <span>(3.9)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="tools.js"></script>
+</body>
+</html>
