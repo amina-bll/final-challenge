@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {
-        // Activate button
+       
         buttons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
   

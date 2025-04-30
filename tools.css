@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Reset & base */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ background: radial-gradient(circle, rgba(36, 27, 27, 1) 80%, rgba(127, 98, 148, 
   overflow-x: hidden;
 }
 
-/* Filter buttons */
+
 .filter-section {
   display: flex;
   justify-content: center;
@@ -29,11 +29,12 @@ background: radial-gradient(circle, rgba(36, 27, 27, 1) 80%, rgba(127, 98, 148, 
   cursor: pointer;
   transition: all 0.3s;
   font-weight: 600;
+  color: #faf6f6;
 }
 .filter-btn.active,
 .filter-btn:hover {
-  background: #6246ea;
-  border-color: #6246ea;
+  background: #f760e0ca;
+  border-color: #ce96dd;
   color: #fff;
 }
 
