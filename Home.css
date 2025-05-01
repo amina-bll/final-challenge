@@ -60,6 +60,10 @@ body {
   transition: color 0.3s;
 }
 
+.nav-links.active {
+  display: flex;
+}
+
 .nav-links a:hover {
   color: rgb(26, 23, 23);
 }
@@ -418,3 +422,4 @@ body {
     font-size: 14px;
   }
 }
+
